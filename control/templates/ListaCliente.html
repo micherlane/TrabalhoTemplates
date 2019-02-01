@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{ % for t in Clientes %}
+{{t.nome}}<br>
+{{t.cpf}}<br>
+{{t.telefone}}<br>
+{{t.endereco}}
+
+{% endfor %}
+
+{% endblock %}
